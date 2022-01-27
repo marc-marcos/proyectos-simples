@@ -1,6 +1,7 @@
 import httplib2
 from bs4 import BeautifulSoup, SoupStrainer
 import requests
+import time
 
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module='bs4')
@@ -16,6 +17,8 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
     # Print New Line on Complete
     if iteration == total: 
         print()
+
+beforeTime = int(round(time.time()))
 
 listOfHtmls = []
 for link in BeautifulSoup(response, features="html.parser", parse_only=SoupStrainer('a')):
@@ -43,4 +46,11 @@ for k in listOfImages:
     
     counter+=1
     print(printProgressBar(counter, len(listOfImages)))
+
+afterTime = int(round(time.time()))
+
+print()
+print()
+
+print(f'Time elapsed: {afterTime - beforeTime} seconds.')
 # status, response = http.request('https://apod.nasa.gov/apod/'+listofHtmls[0])
