@@ -22,7 +22,7 @@ beforeTime = int(round(time.time()))
 
 listOfHtmls = []
 for link in BeautifulSoup(response, features="html.parser", parse_only=SoupStrainer('a')):
-    if link.has_attr('href') and link['href'][0] == 'a' and link['href'][1] == 'p' and len(listOfHtmls) < 100:
+    if link.has_attr('href') and link['href'][0] == 'a' and link['href'][1] == 'p':
         listOfHtmls.append(link['href'])
     
     elif len(listOfHtmls) > 5:
