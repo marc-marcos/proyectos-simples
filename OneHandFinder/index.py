@@ -10,7 +10,7 @@ def check(word):
     
     return True
 
-with open('bigWordList.txt', 'r', encoding="utf8") as f:
+with open('wordlist.txt', 'r', encoding="utf8") as f:
     lines = f.readlines()
 
 final = []
