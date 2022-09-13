@@ -1,5 +1,5 @@
 beautifulsoup4==4.11.1
-httplib2==0.18.1
+httplib2==0.14.0
 numpy==1.22.2
 pygame==2.1.2
-requests==2.25.1
+requests==2.22.0

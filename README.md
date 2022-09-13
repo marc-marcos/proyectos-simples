@@ -13,3 +13,9 @@ Script que encuentra todas las palabras que se pueden escribir solo usando la ma
 
 ## Binary Clock
 Programa que dibuja en pantalla 20 luces y las va encendiendo simulando 20 bits contando los segundos desde que el programa ha iniciado.
+
+## LaRazonPuller
+Proyecto abandonado, pullea las noticias más recientes del períodico La Razón, pendiente de acabar.
+
+## Week Day Guesser
+Llevado por mi necesidad de encontrar una manera de practicar el adivinar que dia de la semana fue una cierta fecha específica. Script muy sencillo que no tendrá mucho más recorrido.
