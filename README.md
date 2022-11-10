@@ -19,3 +19,6 @@ Proyecto abandonado, pullea las noticias más recientes del períodico La Razón
 
 ## Week Day Guesser
 Llevado por mi necesidad de encontrar una manera de practicar el adivinar que dia de la semana fue una cierta fecha específica. Script muy sencillo que no tendrá mucho más recorrido.
+
+## Local Network Finder
+Script to find which devices are connected to my localnetwork and giving the ability to store their MAC addresses and blacklist them and trust them. This doesn't do much but rather just give you a visual clue of the trust level to that device.
