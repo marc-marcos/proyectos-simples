@@ -22,3 +22,6 @@ Llevado por mi necesidad de encontrar una manera de practicar el adivinar que di
 
 ## Local Network Finder
 Script to find which devices are connected to my localnetwork and giving the ability to store their MAC addresses and blacklist them and trust them. This doesn't do much but rather just give you a visual clue of the trust level to that device.
+
+## Convertidor de Playlists
+Pequeño script que cogerá un link de una playlist de Spotify y guardará las canciones en una archivo de texto para poder almacenarlo offline comodamente.
