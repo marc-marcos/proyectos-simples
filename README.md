@@ -25,3 +25,9 @@ Script to find which devices are connected to my localnetwork and giving the abi
 
 ## Convertidor de Playlists
 Pequeño script que cogerá un link de una playlist de Spotify y guardará las canciones en una archivo de texto para poder almacenarlo offline comodamente.
+
+## directory-word-count
+Script para contar las palabras que tienen todos los archivos .md de un directorio y de sus subdirectorios recursivamente. Para poder contar cuantas palabras he escrito en mi Vault de Obsidian básicamente.
+
+## workout-parser
+Script para sacar estadísticas curiosas cuando exporto los datos de mi aplicación para registrar entrenos.

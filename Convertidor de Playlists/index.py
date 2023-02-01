@@ -24,7 +24,11 @@ def get_playlist_to_text(playlist_link, out_file):
         except:
             print("An error has occured with a track!")
 
-playlist_link = sys.argv[1]
-out_file = sys.argv[2] 
+if (len(sys.argv) > 2):
+    playlist_link = sys.argv[1]
+    out_file = sys.argv[2] 
 
-get_playlist_to_text(playlist_link, out_file)
+    get_playlist_to_text(playlist_link, out_file)
+
+else:
+    print("Usage: python3 index.py <link-to-the-playlist> <name-for-the-output-file>")
