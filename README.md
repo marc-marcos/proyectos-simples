@@ -31,3 +31,6 @@ Script para contar las palabras que tienen todos los archivos .md de un director
 
 ## workout-parser
 Script para sacar estadísticas curiosas cuando exporto los datos de mi aplicación para registrar entrenos.
+
+## MassNameChanger
+Script para cambiar en masa nombres de archivos para poder almacenar con facilidad archivos, especialmente fotos.

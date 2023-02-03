@@ -2,3 +2,6 @@
 Convertidor\ de\ Playlists/.cache
 Convertidor\ de\ Playlists/*.txt
 workout-parser/*.csv
+MassNameChanger/*.txt
+__pycache__
+LaRazonPuller/data.json

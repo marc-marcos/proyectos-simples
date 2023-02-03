@@ -50,6 +50,8 @@ while True:
     print("1. Listar los dispositivos")
     print("2. Añadir un dispositivo a la lista de confianza")
     print("3. Añadir un dispositivo a la lista negra")
+    print("4. Limpiar la lista de confianza")
+    print("5. Limpiar la lista negra")
     option = input("[1, 2] >>> ")
 
     devices_list = getDevices()
@@ -66,3 +68,11 @@ while True:
         print("introduce la dirección MAC para añadir a la lista negra")
         mac_address = input(">>> ")
         addTrustedDevice(mac_address, "black_list.json")
+    
+    if option == 4:
+        a = []
+
+        with open("trusted.json", 'w') as file:
+            json.dump(a, file)
+
+        print("Lista de confianza limpiada")
