@@ -22,6 +22,3 @@ Script to find which devices are connected to my localnetwork and giving the abi
 
 ## Convertidor de Playlists
 Pequeño script que cogerá un link de una playlist de Spotify y guardará las canciones en una archivo de texto para poder almacenarlo offline comodamente.
-
-## pi-calculator
-Script written in C++ that can calculate pi with a certain number of given digits of precision.
