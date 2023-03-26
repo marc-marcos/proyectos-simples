@@ -1,4 +1,3 @@
-import string
 import random
 
 notAccepted = ['p', 'i', 'u', 'y', 'h', 'j', 'k', 'l', 'ñ', 'n', 'm', 'b', 'o', 'ó', 'í', 'ú', 'á', 'é']

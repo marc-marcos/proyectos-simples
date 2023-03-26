@@ -6,6 +6,10 @@ import time
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module='bs4')
 
+hard_limit = -1
+if hard_limit == -1:
+    hard_limit = 100_000 
+
 http = httplib2.Http()
 status, response = http.request('https://apod.nasa.gov/apod/archivepixFull.html')
 
@@ -22,10 +26,10 @@ beforeTime = int(round(time.time()))
 
 listOfHtmls = []
 for link in BeautifulSoup(response, features="html.parser", parse_only=SoupStrainer('a')):
-    if link.has_attr('href') and link['href'][0] == 'a' and link['href'][1] == 'p':
+    if len(listOfHtmls) <= hard_limit and link.has_attr('href') and link['href'][0] == 'a' and link['href'][1] == 'p':
         listOfHtmls.append(link['href'])
     
-    elif len(listOfHtmls) > 5:
+    elif len(listOfHtmls) > hard_limit:
         break
 
 print(len(listOfHtmls))
